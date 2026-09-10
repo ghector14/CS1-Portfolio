@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    color: white;
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 5, 5, 1) 56%, rgba(0, 0, 0, 1) 100%);
+}
+
+a {
+    color: rgb(209, 196, 196);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+    color: black;
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+nav {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;   
+    margin: 0;     
+    display: flex;
+    gap: 3rem;      
+}
+
+#tool-link {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+img {
+    max-width: 15%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Geostar Fill", serif;
+    font-weight: 400;
+}
+
+p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.blog.section {
+    height: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
