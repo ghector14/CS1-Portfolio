@@ -39,7 +39,8 @@ a {
 
 nav {
     padding-top: 2rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-family: "Geostar Fill", serif;
 }
 
 ul {
@@ -188,4 +189,11 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
+}
+
+i {
+    font-size: 1.5rem;
+    color: rgb(241, 238, 238);
+    cursor: pointer;
+    gap: 10px;
 }
