@@ -135,10 +135,33 @@ article {
     margin: 4rem auto;
 }
 
-audio {
-    grid-area: sound;
-    margin-top: 0;
+.audio-player p{
+    margin: 0;
 }
+
+.audio-player {
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    width: max-content;
+    }
+
+.player-btn {
+    font-family: "Stalinist One", sans-serif;
+    background-color: #a02727;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.player-btn:hover {
+    background-color: #ea9898;
+}
+
 
 .about-section .profile-photo {
     grid-area: photo;

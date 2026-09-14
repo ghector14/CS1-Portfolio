@@ -33,10 +33,14 @@
                     <a href="https://www.youtube.com/watch?v=O7VmBC19P5M&list=RDO7VmBC19P5M&start_radio=1" target="_blank" id="tool-link">TOOL</a>!!
                     Welcome.
                 </p>
-                <audio controls>
-                    <source src="TOOL - Bottom (Audio) - TOOL (128k).mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                </audio>
+                <div class="audio-player">
+                    <p>Never listened to TOOL? Press Play.</p>
+                    <audio id="my-audio" src="TOOL - Bottom (Audio) - TOOL (128k).mp3"></audio>
+  
+                    <button id="play-btn" class="player-btn">▶ Play</button>
+                    <button id="pause-btn" class="player-btn">⏸ Pause</button>
+                </div>
+
                 <img src="pictures/hector.png" alt="Hector's Photo" class="profile-photo">
     </section>
 
@@ -60,6 +64,7 @@
     </section>
 
     <script src="cursor.js"></script>
+    <script src="audio.js"></script>
 
 </body>
 
