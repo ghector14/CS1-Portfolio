@@ -2,7 +2,17 @@ body {
     margin: 0;
     color: white;
     background: #000000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 5, 5, 1) 56%, rgba(0, 0, 0, 1) 100%);
+}
+
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	cursor: none;
+	z-index: -1;
+	pointer-events: none;
 }
 
 a {
@@ -11,23 +21,24 @@ a {
     font-family: "Open Sans", sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
 .logo {
-    color: black;
+    color: rgb(252, 250, 250);
     font-family: "Stalinist One", sans-serif;
     font-weight: 400;
     font-size: 3rem;
     font-style: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 1rem;
 }
 
 nav {
     padding-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.25rem;
 }
 
@@ -40,7 +51,7 @@ ul {
 }
 
 #tool-link {
-    color: rgb(0, 0, 0);
+    color: rgb(245, 2, 2);
     font-weight: 600;
 }
 
@@ -60,16 +71,48 @@ p {
     font-weight: 300;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.blog-section {
+    display: grid;
+    grid-template-areas:
+        "header photo"
+        "title photo"
+        "time photo"
+        "desc photo";
     align-items: center;
-    margin-top: 1rem;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 7rem auto;
 }
 
-.blog.section {
-    height: 100%;
+.blog-section h1 {
+    grid-area: header;
+    margin: 50px 20px;
+}
+
+.blog-section h2 {
+    grid-area: title;
+    margin: 0;
+}
+
+.blog-section time {
+    grid-area: time;
+    font-size: 0.9rem;
+    color: rgb(209, 196, 196);
+}
+
+.blog-section p {
+    grid-area: desc;
+    text-align: left;
+}
+
+.blog-section img {
+    grid-area: photo;
+    max-width: 440px; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
 }
 
 article {
@@ -77,4 +120,49 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.about-section {
+    display: grid;
+    grid-template-areas:
+        "photo title"
+        "photo desc"
+        "photo sound";
+    align-items: start;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 4rem auto;
+}
+
+audio {
+    grid-area: sound;
+    margin-top: 0;
+}
+
+.about-section .profile-photo {
+    grid-area: photo;
+    max-width: 250px; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.about-section h1 {
+    grid-area: title;
+    margin: 0;
+}
+
+.about-section p {
+    grid-area: desc;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
