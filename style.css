@@ -183,6 +183,38 @@ article {
     margin-bottom: 0;
 }
 
+.reddit {
+    display: grid;
+    grid-template-areas:
+        "photo title"
+        "photo desc"
+        "photo desc";
+    align-items: center;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 7rem auto;
+}
+
+.reddit .tool-logo {
+    grid-area: photo;
+    max-width: 250px; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.reddit h2 {
+    grid-area: title;
+    margin: 0;
+}
+
+.reddit p {
+    grid-area: desc;
+    text-align: left;
+    margin-bottom: 0;
+}
+
 footer {
     position: relative;
     bottom: 0;
